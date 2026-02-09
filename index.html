@@ -1,0 +1,288 @@
+<div class="post-body post-content">
+<div class="speech-bubble">
+<img alt="The CCI EA for MetaTrader 5 uses the Commodity Channel Index (CCI) indicator value on recent bars to make automated trading decisions." border="0" data-original-height="1280" data-original-width="1280" height="100" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNCgfHYGPzdbOyLz5ySPWbzthQn58tuJ8lspSJTBBNNTy_bBn9TNiqpXw4tQSxmx2UIPpVcEZeCeLg0V4KA8PuQMCt-f_-Xpr0sFnRlvRdFYfAtW1T603FpmtJrRouqyqayrVa7RgKJYabI1kUo8M5tlUYt70LRvZjeSnaABt6MA07eUCYqa8BppDIJx5r/w640-h278-e90-rw/cci-ea.png" style="display: block; float: left; margin-right: 5px;" title="CCI MT5 EA" width="100"/>
+The <strong>CCI EA</strong> uses the <strong>Commodity Channel Index (CCI indicator)</strong> value on the last four bars in relationship with the Open/Close prices on the last three bars. This expert advisor for MetaTrader 5 is designed to automate a popular trading strategy.
+</div>
+<div style="text-align: center;">
+<h3><a href="#" id="Examples" name="Examples" title="CCI Examples">CCI Chart examples</a></h3>
+</div>
+<p>A position opening signal is checked if less than 20 seconds remain before closing the current bar and if there are no other positions opened by this EA. The CCI indicator itself does not have to be attached on the trading chart, as shown below – this is a testing chart where the indicator window is inserted automatically.</p>
+<div class="separator" style="clear: both; text-align: center;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNCgfHYGPzdbOyLz5ySPWbzthQn58tuJ8lspSJTBBNNTy_bBn9TNiqpXw4tQSxmx2UIPpVcEZeCeLg0V4KA8PuQMCt-f_-Xpr0sFnRlvRdFYfAtW1T603FpmtJrRouqyqayrVa7RgKJYabI1kUo8M5tlUYt70LRvZjeSnaABt6MA07eUCYqa8BppDIJx5r/s1887/cci-ea.png" style="margin-left: 1em; margin-right: 1em;"><img alt="A chart showing how the CCI Expert Advisor for MT5 automates trading decisions based on the Commodity Channel Index." border="0" data-original-height="817" data-original-width="1887" height="278" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNCgfHYGPzdbOyLz5ySPWbzthQn58tuJ8lspSJTBBNNTy_bBn9TNiqpXw4tQSxmx2UIPpVcEZeCeLg0V4KA8PuQMCt-f_-Xpr0sFnRlvRdFYfAtW1T603FpmtJrRouqyqayrVa7RgKJYabI1kUo8M5tlUYt70LRvZjeSnaABt6MA07eUCYqa8BppDIJx5r/w640-h278-e90-rw/cci-ea.png" title="CCI EA" width="640"/></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<h3><a href="#" id="Settings" name="Settings" title="CCI Settings">CCI EA Settings</a></h3>
+</div>
+<p>The <strong>CCI expert advisor for Metatrader 5</strong> has very simple and easy to understand settings. The stoploss, take profit, trailing stop / step values are in pips. There are three ways to set the trade lotsize:</p>
+<ol>
+<li>the <strong>Lots</strong> value</li>
+<li>the <strong>Martingale</strong> option – to lower the risk, this can be limited by the martingale multiplier and the number of times a consecutive losing trade can have its lotsize increased.</li>
+<li>the <strong>Increase lotsize</strong> option, which simply increases the lotsize in steps, as defined by the trader, when either losing or winning a trade</li>
+</ol>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHeVIWLPS6_MEWAOqAPHl5FNZgsyar2FNTds81ITT-JCXf-VxnBZ2vtYjCYsj-A7hZzIvLDTsS9sskIbHD5aeJ_pjOVz0cvBP-CqJl0WNcQ8tXwrjJtPcxIioSEwTL7KtpWlaUXB_pWBGj-0gww2jkt7TGho-n26E_mcCRyEMv-lhVFatqbslLzz5ISvMs/s782/cci-settings.png" style="display: block; padding: 1em 0px; text-align: center;"><img alt="A screenshot of the CCI MT5 EA settings window, showing the customizable parameters for automated trading." border="0" data-original-height="603" data-original-width="782" height="494" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHeVIWLPS6_MEWAOqAPHl5FNZgsyar2FNTds81ITT-JCXf-VxnBZ2vtYjCYsj-A7hZzIvLDTsS9sskIbHD5aeJ_pjOVz0cvBP-CqJl0WNcQ8tXwrjJtPcxIioSEwTL7KtpWlaUXB_pWBGj-0gww2jkt7TGho-n26E_mcCRyEMv-lhVFatqbslLzz5ISvMs/w640-h494-e90-rw/cci-settings.png" title="CCI MT5 EA" width="640"/></a></div>
+<p>As a rule of thumb, traders should probably not use both methods (Martingale and Increase lotsize) at the same time, as this might also increase the risks. But this depends on the traders’ risk appetite. The test below is meant to demonstrate that the <strong>CCI EA</strong> can be profitable, if setup properly. It is not meant to guarantee profitability, as this is determined not only by the trader’s skills and the quality of their trading strategy or automated solution used, but many other external factors such as unexpected price movements or just a broken internet connection.</p>
+<div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3xpXy_8szGSrcST5MJ9eJSO6vqYIb3vs78JWJ88MGbtNe1v7OlWkv5Z1LxFOGeKkw8didBoWPEt3NWPWSZRiuqjuAtf_zkO4_hg80DfnSqb86VPJB5Hh1PnBwddBbrUSFzCJGaIkEgqi943zzYiNxfYfSlhiIP13K6gpSYu9O99wDz74Bflxrw20y1XSz/s1893/cc-ea-results.png" style="display: block; padding: 1em 0px; text-align: center;"><img alt="Trading results from a backtest of the CCI expert advisor on MT5." border="0" data-original-height="325" data-original-width="1893" height="110" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3xpXy_8szGSrcST5MJ9eJSO6vqYIb3vs78JWJ88MGbtNe1v7OlWkv5Z1LxFOGeKkw8didBoWPEt3NWPWSZRiuqjuAtf_zkO4_hg80DfnSqb86VPJB5Hh1PnBwddBbrUSFzCJGaIkEgqi943zzYiNxfYfSlhiIP13K6gpSYu9O99wDz74Bflxrw20y1XSz/w640-h110-e90-rw/cc-ea-results.png" title="CCI expert advisor MT5" width="640"/></a></div>
+<p>More about trading using the CCI indicator below not necessarily related to the RobotFX CCI EA).</p>
+<h2>How to Trade Forex Using the CCI Indicator</h2>
+<p>The **CCI indicator**, or <strong>Commodity Channel Index</strong>, is a popular technical analysis tool that traders use to identify trends, overbought and oversold conditions, and divergences in the forex market. The CCI indicator was developed by Donald Lambert in 1980 and is based on the assumption that prices tend to move in cycles, with highs and lows occurring at regular intervals.</p>
+<p>The <strong>CCI indicator</strong> is calculated by subtracting the average price of a currency pair from its current price, and then dividing the result by a constant factor that adjusts for volatility. The CCI indicator oscillates between +100 and -100, with zero as the centerline. The CCI indicator can be applied to any timeframe and any currency pair, but it is most commonly used on the daily and weekly charts.</p>
+<h2>How to Use the CCI Indicator for Trend Trading</h2>
+<p>One of the main uses of the <strong>CCI indicator</strong> is to identify the direction and strength of the trend. A positive CCI value indicates that the price is above its average and that the trend is up, while a negative CCI value indicates that the price is below its average and that the trend is down. The higher or lower the CCI value, the stronger the trend.</p>
+<p>Traders can use the <strong>CCI indicator</strong> to confirm the trend by looking for readings above +100 for uptrends and below -100 for downtrends. Alternatively, traders can use the zero line crossover as a trend signal, where a cross above zero indicates a bullish trend and a cross below zero indicates a bearish trend.</p>
+<p>Traders can also use the <strong>CCI indicator</strong> to identify trend reversals by looking for divergences between the price and the CCI. A divergence occurs when the price makes a new high or low, but the CCI fails to do so. A bearish divergence occurs when the price makes a higher high, but the CCI makes a lower high, indicating a potential reversal to the downside. A bullish divergence occurs when the price makes a lower low, but the CCI makes a higher low, indicating a potential reversal to the upside.</p>
+<h2>How to Use the CCI Indicator for Overbought and Oversold Trading</h2>
+<p>Another use of the <strong>CCI indicator</strong> is to identify overbought and oversold conditions in the forex market. Overbought and oversold conditions occur when the price deviates too far from its average, indicating a possible correction or reversal. The CCI indicator can help traders spot these conditions by looking for extreme readings above +100 or below -100.</p>
+<p>Traders can use the <strong>CCI indicator</strong> to trade overbought and oversold conditions in two ways: as a counter-trend strategy or as a trend-following strategy. A counter-trend strategy involves selling when the CCI is above +100 and buying when the CCI is below -100, expecting a reversal or a pullback to the average. A trend-following strategy involves buying when the CCI is above +100 and selling when the CCI is below -100, expecting a continuation or a breakout of the trend.</p>
+<p>However, traders should be careful when using the <strong>CCI indicator</strong> for overbought and oversold trading, as extreme readings can persist for a long time, especially in strong trends. Therefore, traders should always use other technical analysis tools, such as support and resistance levels, trendlines, and candlestick patterns, to confirm the signals and to manage the risk.</p>
+<h2>Conclusion</h2>
+<p>The <strong>CCI indicator</strong> is a versatile and useful tool that can help traders identify trends, overbought and oversold conditions, and divergences in the forex market. The CCI indicator can be used on any timeframe and any currency pair, but it is most effective on the daily and weekly charts. Traders can use the CCI indicator to trade with the trend, against the trend, or to anticipate trend reversals, depending on their trading style and objectives. However, traders should always combine the CCI indicator with other technical analysis tools and indicators, and use proper risk management techniques, to improve their trading performance and accuracy.</p>
+<div style="background-color: #f8f8f8; border: 1px solid rgb(0, 0, 0); padding: 10px 20px 0px;">
+<h4 style="font-weight: normal;">Download CCI expert advisor free</h4>
+<a href="https://drive.google.com/uc?export=download&amp;id=153VO3EZk67cEk2Kbq3_tPCG-aAf0gxls" id="freedownload" name="freedownload" rel="noopener noreferrer nofollow" target="_blank" title="Free download">
+<div style="-ms-flex-align: center; -webkit-align-items: center; -webkit-box-align: center; align-items: center; background-color: #444444; border-radius: 4px; border: 1px solid rgb(255, 255, 255); color: #f0f0f0; display: flex; font-family: Roboto; font-size: 1.2em; justify-content: center; margin: 0px auto; padding: 14px 20px; text-align: center; width: 80%;"><svg height="24" style="margin-right: 10px;" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784L18 17a6 6 0 0 0-11.996-.225L6 17v1.978a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z" fill="rgba(240,240,240,1)"></path></svg> Download a free version</div>
+</a>
+<em style="color: #4e4e4e; font-family: Roboto; font-size: 0.8em;"><span style="color:gold; size:1.2em; font-style: normal">⚠</span> fully functional but limited to trading on demo accounts</em>
+</div>
+<span id="theprice">39</span>
+<script>
+//<![CDATA[
+document.addEventListener('DOMContentLoaded', function () {
+    // --- PART 1: Remove links to nonexistent anchors ---
+    const linkshDiv = document.querySelector('.linksh');
+    if (linkshDiv) {
+        const links = linkshDiv.querySelectorAll('a');
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                const targetId = href.substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (!targetElement) {
+                    link.style.display = 'none';
+                }
+            }
+        });
+    }
+
+    // --- PART 2: Lazy-load YouTube iframe ---
+    const container = document.querySelector('.youtube-lazy');
+    if (!container) return;
+
+    const videoId = container.getAttribute('data-video-id');
+    const si = container.getAttribute('data-si');
+
+    function createIframe(src = null) {
+        if (container.querySelector("iframe")) return;
+
+        const iframe = document.createElement("iframe");
+        iframe.setAttribute("width", "560");
+        iframe.setAttribute("height", "315");
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("loading", "lazy");
+        iframe.setAttribute("title", "YouTube video player");
+        iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin");
+        iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+        iframe.setAttribute("name", "youtubeframe");
+        iframe.src = src || `https://www.youtube.com/embed/${videoId}?autoplay=1&si=${encodeURIComponent(si)}`;
+
+        container.innerHTML = "";
+        container.appendChild(iframe);
+    }
+
+    function scrollToIframeCenter() {
+        container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    // On thumbnail click
+    container.addEventListener("click", () => {
+        createIframe();
+        scrollToIframeCenter();
+    });
+
+    // On ▶️ link click
+    document.querySelectorAll('a[target="youtubeframe"]').forEach(link => {
+        link.addEventListener("click", (e) => {
+            const iframeExists = container.querySelector("iframe");
+            if (!iframeExists) {
+                e.preventDefault();
+                createIframe(link.href);
+                setTimeout(() => {
+                    window.open(link.href, "youtubeframe");
+                    scrollToIframeCenter();
+                }, 200);
+            } else {
+                scrollToIframeCenter();
+            }
+        });
+    });
+});
+//]]>
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "CCI expert advisor MT5",
+  "url": "https://www.robotfx.org/p/cci-expert-advisor-mt5.html",
+  "description": "The CCI EA  uses the Commodity Channel Index (CCI indicator)  value on the last four bars in relationship with the Open/Close prices on the last three bars. This expert advisor for MetaTrader 5 is &#8230;",
+  "operatingSystem": "MetaTrader 4, MetaTrader 5 (Windows, macOS, Linux with Wine/VM)",
+  "applicationCategory": "https://schema.org/FinanceApplication",
+  "applicationSuite": "MetaTrader",
+  
+    
+      "screenshot": {
+        "@type": "ImageObject",
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNCgfHYGPzdbOyLz5ySPWbzthQn58tuJ8lspSJTBBNNTy_bBn9TNiqpXw4tQSxmx2UIPpVcEZeCeLg0V4KA8PuQMCt-f_-Xpr0sFnRlvRdFYfAtW1T603FpmtJrRouqyqayrVa7RgKJYabI1kUo8M5tlUYt70LRvZjeSnaABt6MA07eUCYqa8BppDIJx5r/w1200-h630-p-k-no-nu/cci-ea.png"
+      },
+    
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "RobotFX Team",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://blogger.googleusercontent.com/img/a/AVvXsEjqDhYXLdZI2Hzi6vkQ2pnPz20A0rNyP3HTYoia8-RUD3170pCSfv77ACpX05KJt2iIgwDcm6N79AqUxzKoAFgIupT-XgEC9rzlwDH4hBMKDACgfLPjg2UaySbCEQUW9mZnMlHq_n0q4WC8juOoEAtodFyQcP_M0J9fxW3c3UUy6z7L9oYzcOgG-anlGA=s128-e365-rw"
+    }
+  },
+  "datePublished": "2025-07-20T08:56:00-07:00",
+  "dateModified": "2025-07-20T08:56:00-07:00",
+  "offers": {
+    "@type": "Offer",
+    "availability": "https://schema.org/InStock",
+    "price": "0",
+    "priceCurrency": "USD",
+    "url": "https://www.robotfx.org/p/cci-expert-advisor-mt5.html"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "5"
+  },
+  "review": [
+    
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "name": "Anonymous",
+    "reviewBody": "holy crap this thing works. i used to trade the cci manually and it was a pain. this ea handles everything. love it",
+    "author": {
+      "@type": "Person",
+      "name": "Anonymous"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RobotFX"
+    }
+  },
+
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "name": "Leah Murad",
+    "reviewBody": "good little EA for the CCI crowd. if you know the indicator you&#39;ll like this. not a holy grail or anything but solid performance",
+    "author": {
+      "@type": "Person",
+      "name": "Leah Murad"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RobotFX"
+    }
+  },
+
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "name": "Stígandr",
+    "reviewBody": "this cci ea is the real deal. I&#39;ve been using the indicator for a while but this thing just automates my strategy flawlessly. im actually making a profit now",
+    "author": {
+      "@type": "Person",
+      "name": "Stígandr"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RobotFX"
+    }
+  },
+
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "name": "Corine Damodar",
+    "reviewBody": "been using the cci ea for a few weeks now. its makin money. simple as that. no fuss no bullsh*t. its a keeper",
+    "author": {
+      "@type": "Person",
+      "name": "Corine Damodar"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RobotFX"
+    }
+  },
+
+  {
+    "@type": "Review",
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": "5"
+    },
+    "name": "Anonymous",
+    "reviewBody": "this is a pretty decent cci bot. i like the way it manages trades. took a bit to get used to the settings but its been a good journey. recommend",
+    "author": {
+      "@type": "Person",
+      "name": "Anonymous"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "RobotFX"
+    }
+  }
+
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to use CCI expert advisor MT5",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Functions",
+      "text": "Explore the core functions of the CCI expert advisor MT5."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Charts",
+      "text": "Check the charts to see CCI expert advisor MT5 examples and understand how it works."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Settings",
+      "text": "Adjust the CCI expert advisor MT5 settings according to the instructions and your preferences."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Videos",
+      "text": "Watch tutorial videos for a better understanding of how CCI expert advisor MT5 works."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Download",
+      "text": "Download the CCI expert advisor MT5 and copy it in the MetaTrader folder."
+    }
+  ]
+}
+</script>
+</div>
